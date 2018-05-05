@@ -47,28 +47,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Conn_01x06_Male L_Conn1
-U 1 1 5AEC9C40
-P 4900 3800
-F 0 "L_Conn1" H 4900 4100 50  0000 C CNN
-F 1 "Conn_01x06_Male" H 4900 3400 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x06_Pitch2.54mm" H 4900 3800 50  0001 C CNN
-F 3 "" H 4900 3800 50  0001 C CNN
-	1    4900 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Conn_01x06_Male R_Conn1
-U 1 1 5AEC9D4C
-P 4900 4725
-F 0 "R_Conn1" H 4900 5025 50  0000 C CNN
-F 1 "Conn_01x06_Male" H 4900 4325 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x06_Pitch2.54mm" H 4900 4725 50  0001 C CNN
-F 3 "" H 4900 4725 50  0001 C CNN
-	1    4900 4725
-	1    0    0    -1  
-$EndComp
-$Comp
 L Conn_01x04_Male Molex1
 U 1 1 5AEC9F7F
 P 6150 4375
@@ -79,30 +57,6 @@ F 3 "" H 6150 4375 50  0001 C CNN
 	1    6150 4375
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	5950 4175 5950 3600
-Wire Wire Line
-	5950 3600 5100 3600
-Wire Wire Line
-	5950 4275 5850 4275
-Wire Wire Line
-	5850 4275 5850 3700
-Wire Wire Line
-	5850 3700 5100 3700
-Wire Wire Line
-	5950 4375 5825 4375
-Wire Wire Line
-	5825 4375 5825 5025
-Wire Wire Line
-	5825 5025 5100 5025
-Wire Wire Line
-	5950 4475 5950 4925
-Wire Wire Line
-	5950 4925 5100 4925
-Text Label 4750 4925 0    39   ~ 0
-3.3V
-Text Label 4750 5025 0    39   ~ 0
-GND
 Text Label 4775 3600 0    39   ~ 0
 TXD
 Text Label 4775 3700 0    39   ~ 0
@@ -162,6 +116,42 @@ F 3 "" H 7250 4450 50  0001 C CNN
 	1    7250 4450
 	1    0    0    -1  
 $EndComp
+$Comp
+L Conn_01x08_Male L_Conn1
+U 1 1 5AEE312A
+P 4900 3700
+F 0 "L_Conn1" H 4900 4100 50  0000 C CNN
+F 1 "Conn_01x08_Male" H 4900 3200 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x08_Pitch2.54mm" H 4900 3700 50  0001 C CNN
+F 3 "" H 4900 3700 50  0001 C CNN
+	1    4900 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x08_Male R_Conn1
+U 1 1 5AEE31A5
+P 4900 4675
+F 0 "R_Conn1" H 4900 5075 50  0000 C CNN
+F 1 "Conn_01x08_Male" H 4900 4175 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x08_Pitch2.54mm" H 4900 4675 50  0001 C CNN
+F 3 "" H 4900 4675 50  0001 C CNN
+	1    4900 4675
+	1    0    0    -1  
+$EndComp
+Text Label 4750 5000 0    39   ~ 0
+3.3V
+Text Label 4750 5100 0    39   ~ 0
+GND
+Wire Wire Line
+	5950 4175 5950 3600
+Wire Wire Line
+	5950 3600 5100 3600
+Wire Wire Line
+	5950 4275 5850 4275
+Wire Wire Line
+	5850 4275 5850 3700
+Wire Wire Line
+	5850 3700 5100 3700
 Wire Wire Line
 	6750 4200 6750 4350
 Wire Wire Line
@@ -177,4 +167,8 @@ Connection ~ 7400 4350
 Wire Wire Line
 	7250 4450 7250 4350
 Connection ~ 7250 4350
+Wire Wire Line
+	5950 4375 5100 4375
+Wire Wire Line
+	5950 4475 5100 4475
 $EndSCHEMATC
